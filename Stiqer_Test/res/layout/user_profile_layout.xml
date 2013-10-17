@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <!-- The top section -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        
+        <ImageView
+            android:id="@+id/profile_head_portrait" 
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_launcher" />
+        
+        <TextView 
+            android:id="@+id/profile_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/profile_head_portrait"
+            android:text="Rainbow Ma" />
+        
+        <TextView 
+            android:id="@+id/profile_user_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_user_name"
+            android:layout_toRightOf="@id/profile_head_portrait"
+            android:text="rainbow163" />
+        
+        <TextView 
+            android:id="@+id/stiqer_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="+40" />
+        
+        <TextView 
+            android:id="@+id/give_user_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/profile_head_portrait"
+            android:layout_alignParentRight="true"
+            android:text="give Rainbow a gift" />
+        
+        
+        <!-- 
+        <LinearLayout
+	        android:orientation=""
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" >
+        
+    	</LinearLayout>
+         -->
+    </RelativeLayout>
+    
+    <!-- The center (Achievements) section --> 
+    <LinearLayout
+        android:layout_marginTop="40px"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        
+        <TextView
+            android:id="@+id/achievement_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Achievements" />
+        
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            
+            <ImageView
+                android:id="@+id/achievement_image1" 
+                android:layout_width="120px"
+                android:layout_height="120px"
+                android:layout_margin="1px"
+                android:src="@drawable/ic_launcher" />
+            
+            <ImageView
+                android:id="@+id/achievement_image1" 
+                android:layout_width="120px"
+                android:layout_height="120px"
+                android:layout_margin="1px"
+                android:src="@drawable/ic_launcher" />
+            
+            <ImageView
+                android:id="@+id/achievement_image1" 
+                android:layout_width="120px"
+                android:layout_height="120px"
+                android:layout_margin="1px"
+                android:src="@drawable/ic_launcher" />
+            
+            <ImageView
+                android:id="@+id/achievement_image1" 
+                android:layout_width="120px"
+                android:layout_height="120px"
+                android:layout_margin="1px"
+                android:src="@drawable/ic_launcher" />
+            
+        </LinearLayout>
+        
+        <!-- The "Recent Activity" section -->
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+            
+	        <LinearLayout
+	            android:orientation="vertical"
+	            android:layout_marginTop="20px"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content" >
+	        
+		        <TextView 
+		            android:id="@+id/recent_activity"
+		            android:layout_marginLeft="5px"
+		            android:layout_marginBottom="5px"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Recent Activity" />
+		        
+		        <TextView 
+		            android:id="@+id/activity1"
+		            android:layout_marginLeft="5px"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Became friends with Jane Joo" />
+		        
+		        <TextView 
+		            android:id="@+id/activity2"
+		            android:layout_marginLeft="5px"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Became friends with Thomas" />
+		        
+		        <TextView 
+		            android:id="@+id/activity3"
+		            android:layout_marginLeft="5px"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Gave 2 coffee by Cova Cofee to Sarah" />
+	        
+        	</LinearLayout>
+        	
+	        <LinearLayout
+	            android:id="@+id/profile_bottom_scan_button_layout"
+	        	android:layout_width="fill_parent"
+	        	android:layout_height="wrap_content"
+	        	android:layout_alignParentBottom="true" >
+	        	
+		        <Button android:id="@id/btn_scan"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:gravity="center"
+		            android:text="@string/text_scan" />
+	        </LinearLayout>
+	        
+        </RelativeLayout>
+    </LinearLayout>
+	
+</LinearLayout>
